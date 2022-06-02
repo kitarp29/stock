@@ -23,7 +23,7 @@ func main() {
 	}))
 	// Root route => handler
 	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello, World!\n")
+		return c.String(http.StatusOK, "Yes! I am alive!\n")
 	})
 
 	e.GET("/excuse", excuses.Bahana)
